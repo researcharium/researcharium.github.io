@@ -1,3 +1,8 @@
+---
+layout: post
+job: Reader
+---
+
 Have you also noticed your attention span decrease drastically? Well you are not alone…
 
 The information age has given us the ability to access entire libraries in a blink of an eye and at the same time enabled new behaviors such as doom scrolling the news feeds of various apps hoping to find new gems whilst lead astray by AI systems that completely hijacked our brain's reward system to keep us captivated and harvest our attention for ad revenue. As attention became a currency it seems we lost the ability to pay attention. In this context, how are the current and next generation of researchers ever going to collect their thoughts long enough to formulate the next revolutionary shift in paradigm? Send me a tweet if you figure this out…

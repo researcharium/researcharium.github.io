@@ -1,5 +1,5 @@
 ---
-Name: Networker
+name: Networker
 ---
 
 Coming soon...

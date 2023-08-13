@@ -5,9 +5,24 @@
     <a href="/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
       About
     </a>
-  </nav> -->
+  </nav>
   <nav>
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}
+
+      </a>
     {% endfor %}
-  </nav>
+  </nav> -->
+  
+    <ul class="nav nav-tabs justify-centent-center">
+        {% for item in site.data.navigation %}
+        <li class="nav-item">
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active" aria-current="page"{% else %} class="nav-link"  {% endif %}>
+                {{ item.name }}
+                
+              </a>
+        </li>
+        {% endfor %}
+    </ul>    
+  
