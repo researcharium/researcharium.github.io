@@ -1,0 +1,13 @@
+---
+layout: default
+title: Categories 
+---
+<h1>Jobs of a Researcher</h1>
+<ul>
+    {% for job in site.categories %}
+      <li>
+        <h2>{{ job.name }}</h2>
+        <p>{{ job.content | markdownify }}</p>
+      </li>
+    {% endfor %}
+  </ul>
