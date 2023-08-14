@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="text-left">
+    <img alt={{page.name}} src={{ page.name | prepend: "../assets/figures/cards/" | append: ".png"}} width="150px"> 
+    <h2>Posts in the category - {{page.name}}</h2>
+  </div>
+
+<ul>
+  {% assign filtered_posts = site.posts | where: 'job', page.name %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {{post.excerpt}}
+  {% endfor %}
+</ul>

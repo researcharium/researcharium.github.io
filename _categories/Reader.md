@@ -1,7 +1,9 @@
 ---
 name: Reader
 ---
+
 In this section we are going to explore the principal activity of the researcher, at least on paper ;P.
+
 This task is indeed reading ! This is a central task in the life of a researcher, and although it sounds like a simple thing for any literate person, in practice it does come with its fair share of challenges when you are doing it for the purpose of research!
 We are going to explore various elements in this category, highlighting the problems faced by us researchers in the following 4 categories related to this activity.
 1. Coping with literature

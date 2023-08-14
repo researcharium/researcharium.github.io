@@ -54,12 +54,31 @@
 #   - vendor/gems/
 #   - vendor/ruby/
 #exclude vendor
+#gems:
+#  - octopress-paginate
 
 collections:
   categories:
-  #output: true
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "job"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+

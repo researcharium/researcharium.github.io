@@ -1,7 +1,10 @@
 --- 
 name: Entrepreneur
 ---
-This is not an activity that comes to mind when one thinks about being a researcher. It is however increasingly important for researchers to consider themselves entrepreneurs. This is a consequence of the increasingly competitive environment in which researchers find themselves, and beyond the obvious debate regarding whether a researcher should be burdened with tasks other than the production of new knowledge - which we’ll cover in the first blog post -  there is the irrefutable hard reality of the number of PhD graduates versus the number of academic roles available. Hence, the basic supply and demand dynamics in academia mean that the pressure put on researchers to differentiate themselves cannot be solved on an individual level through a philosophical debate about what is desirable or not. 
+
+This is not an activity that comes to mind when one thinks about being a researcher. It is however increasingly important for researchers to consider themselves entrepreneurs.
+
+This is a consequence of the increasingly competitive environment in which researchers find themselves, and beyond the obvious debate regarding whether a researcher should be burdened with tasks other than the production of new knowledge - which we’ll cover in the first blog post -  there is the irrefutable hard reality of the number of PhD graduates versus the number of academic roles available. Hence, the basic supply and demand dynamics in academia mean that the pressure put on researchers to differentiate themselves cannot be solved on an individual level through a philosophical debate about what is desirable or not. 
 The blog posts of this section will cover the entrepreneurship aspect of being a researcher today. This will mostly apply to the UK where we derive our experience but it is likely that the experience of researchers around the world bear many similarities. 
 
 

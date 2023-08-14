@@ -1,5 +1,5 @@
 ---
-name: Fund seeker
+name: Fund-seeker
 ---
 
 Coming soon...

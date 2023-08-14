@@ -3,6 +3,7 @@ layout: default
 title: Categories 
 ---
 <h1>Jobs of a Researcher</h1>
+<!--
 <ul>
     {% for job in site.categories %}
       <li>
@@ -10,4 +11,22 @@ title: Categories
         <p>{{ job.content | markdownify }}</p>
       </li>
     {% endfor %}
-  </ul>
+  </ul>-->
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  
+    {% for job in site.categories %}
+    <div class="card" style="width: 18rem;">
+      <img src={{ job.name | prepend: "./assets/figures/cards/" | append: ".png"}} class="card-img-top" alt={{job.name}}>
+      <div class="card-body">
+        <h5 class="card-title">{{job.name}}</h5>
+        <p class="card-text">{{ job.excerpt }}</p>
+        {% assign job = site.categories | where: 'name', page.job | first %}
+        {% if job %}
+           <a href="{{ job.url }}" class="btn btn-primary">See posts</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  
+</div>
+ 
