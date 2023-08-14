@@ -15,7 +15,7 @@ title: Categories
 <div class="row row-cols-1 row-cols-md-2 g-4">
   
     {% for job in site.categories %}
-    <div class="card" style="width: 18rem;">
+    <div class="card border-dark" style="width: 18rem;">
       <img src={{ job.name | prepend: "./assets/figures/cards/" | append: ".png"}} class="card-img-top" alt={{job.name}}>
       <div class="card-body">
         <h5 class="card-title">{{job.name}}</h5>

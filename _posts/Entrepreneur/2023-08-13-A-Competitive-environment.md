@@ -2,9 +2,9 @@
 layout: post
 job: Entrepreneur
 ---
-# A competitive environment
 
-There are a lot more PhD students than the number of academic positions available.
+There are a lot more PhD students than the number of academic positions available...
+
 According to a report from the Higher Education Policy institute in the UK (HEPI), 67% of PhD students want a career in academic research but only 30% stay in academia three years on. 
 These numbers mean that most young researchers are not able to achieve their career objectives after many years of sustained effort and sacrifice. This is a tragic situation for many early career researchers that find themselves having to forgo their dreams of conducting ground breaking research for the benefit of humanity.
 In this article our objective is not to establish the reasons why there are too many PhD students for the amount of positions available, for that we refer the reader to this good nature careers podcast titled “too many PhDs too few research positions” where one of the participants compares the situation to a failure at “birth control”. Instead we are looking at the implications of the increased competition on the researchers and the actions they are then led to take to keep their dreams alive.

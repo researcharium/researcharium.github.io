@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI","sourcesContent":[".current {\n    color: green;\n}"],"file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;AAAA;AAAA;AAAA","sourcesContent":[".current {\n    color: green;\n}\n\n/*.footer {\n    position: relative;\n    padding-top:100px;\n  }*/ "],"file":"styles.css"}
