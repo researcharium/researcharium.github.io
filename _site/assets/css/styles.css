@@ -2,9 +2,12 @@
   color: green;
 }
 
-/*.footer {
-    position: relative;
-    padding-top:100px;
-  }*/
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 /*# sourceMappingURL=styles.css.map */
