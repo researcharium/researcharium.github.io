@@ -7,7 +7,7 @@ title: Home
     We talk about our experience as researchers, the good and the bad whilst giving some tips to better navigate this role. We hope to participate in raising awareness about the issues plaguing Researchers and to suggest good approaches to mitigating them.
 </p>
 
-<div class="text-center"></div>
+<div class="text-center" id="image"></div>
     <canvas id="myCanvas">
     
         <img src="./assets/figures/Researcharium_linked_nocircle.svg" alt="The jobs of a researcher" class="img-fluid" width="800px" >    
@@ -22,68 +22,80 @@ title: Home
         return;
       }
    
-    const ctx = canvas.getContext("2d"); //Canvas context
-
-    // Sizing the canvas according to the window size
+    
+    // Getting window width
     windowWidth = window.innerWidth;
-    ctx.canvas.width  = Math.min(windowWidth,1000);
-    ctx.canvas.height = ctx.canvas.width;
-    // Setting image paths
-    const imagePaths = ["./assets/figures/animation/presenter.png",
-                        "./assets/figures/animation/networker.png",
-                        "./assets/figures/animation/recruiter.png",
-                        "./assets/figures/animation/trainer.png",
-                       "./assets/figures/animation/teacher.png",
-                       "./assets/figures/animation/fundseeker.png",
-                       "./assets/figures/animation/community.png",
-                       "./assets/figures/animation/clerk.png",
-                       "./assets/figures/animation/entrepreneur.png",
-                       "./assets/figures/animation/reader.png",
-                       "./assets/figures/animation/technician.png",
-                      "./assets/figures/animation/writer.png"];
+    
 
-    const images = [];
-    let loadedImagesCount = 0;
+    if (windowWidth> 720)
+    {
+        const ctx = canvas.getContext("2d"); //Canvas context
 
-    let phi = 60;
-    // Load job vignettes in the array "images" and head image in headImage
-    const headImage = new Image();
-    headImage.src = "./assets/figures/animation/head.png";
+        // Sizing the canvas according to the window size
+        ctx.canvas.width  = Math.min(windowWidth,1000);
+        ctx.canvas.height = ctx.canvas.width;
+        // Setting image paths
+        const imagePaths = ["./assets/figures/animation/presenter.png",
+                            "./assets/figures/animation/networker.png",
+                            "./assets/figures/animation/recruiter.png",
+                            "./assets/figures/animation/trainer.png",
+                        "./assets/figures/animation/teacher.png",
+                        "./assets/figures/animation/fundseeker.png",
+                        "./assets/figures/animation/community.png",
+                        "./assets/figures/animation/clerk.png",
+                        "./assets/figures/animation/entrepreneur.png",
+                        "./assets/figures/animation/reader.png",
+                        "./assets/figures/animation/technician.png",
+                        "./assets/figures/animation/writer.png"];
 
-    imagePaths.forEach(path =>{
-        const image = new Image();
-        image.src = path;
-        image.onload = () => {
-            loadedImagesCount++;
-            if (loadedImagesCount === imagePaths.length) {
-                // All images are loaded, start drawing
-                    setInterval(drawImages,50);
-            }
-        };
-        images.push(image);
-    });
+        const images = [];
+        let loadedImagesCount = 0;
+
+        let phi = 60;
+        // Load job vignettes in the array "images" and head image in headImage
+        const headImage = new Image();
+        headImage.src = "./assets/figures/animation/head.png";
+
+        imagePaths.forEach(path =>{
+            const image = new Image();
+            image.src = path;
+            image.onload = () => {
+                loadedImagesCount++;
+                if (loadedImagesCount === imagePaths.length) {
+                    // All images are loaded, start drawing
+                        setInterval(drawImages,50);
+                }
+            };
+            images.push(image);
+        });
+    
+
 
     
 
-    function drawImages() {
-        const sizeCanvas = canvas.width;
-        ctx.clearRect(0, 0, sizeCanvas, sizeCanvas);
-        // Position the head at the center of the canvas
-        const headSize = 0.3*sizeCanvas;
-        ctx.drawImage(headImage,(sizeCanvas-headSize)/2, (sizeCanvas-headSize)/2, headSize, headSize);
+        function drawImages() {
+            const sizeCanvas = canvas.width;
+            ctx.clearRect(0, 0, sizeCanvas, sizeCanvas);
+            // Position the head at the center of the canvas
+            const headSize = 0.3*sizeCanvas;
+            ctx.drawImage(headImage,(sizeCanvas-headSize)/2, (sizeCanvas-headSize)/2, headSize, headSize);
 
-        cercleRadius = sizeCanvas*90/200;
-        // Tile size
-        tileWidth = 0.175*sizeCanvas;
-        tileHeight = 0.08*sizeCanvas;
-        // Draw each image at specific positions
-        images.forEach((image, index) => {
-        const x = Math.cos(Math.PI/6*index + 2*phi*Math.PI/360)*(cercleRadius -tileWidth/2) + (sizeCanvas-tileWidth)/2; // Adjust this to control tiles horizontally
-        const y = Math.sin(Math.PI/6*index + 2*phi*Math.PI/360)*(cercleRadius -tileWidth/2) + sizeCanvas/2;         // Adjust this to control vertical positioning
+            cercleRadius = sizeCanvas*90/200;
+            // Tile size
+            tileWidth = 0.175*sizeCanvas;
+            tileHeight = 0.08*sizeCanvas;
+            // Draw each image at specific positions
+            images.forEach((image, index) => {
+            const x = Math.cos(Math.PI/6*index + 2*phi*Math.PI/360)*(cercleRadius -tileWidth/2) + (sizeCanvas-tileWidth)/2; // Adjust this to control tiles horizontally
+            const y = Math.sin(Math.PI/6*index + 2*phi*Math.PI/360)*(cercleRadius -tileWidth/2) + sizeCanvas/2;         // Adjust this to control vertical positioning
 
-        ctx.drawImage(image, x, y, tileWidth, tileHeight); // Adjust width and height as needed
-        });
-        phi = (phi+0.1)%360; 
+            ctx.drawImage(image, x, y, tileWidth, tileHeight); // Adjust width and height as needed
+            });
+            phi = (phi+0.1)%360; 
+        }
+    } 
+    else {
+        document.getElementById("image").innerHTML="<img src=\"./assets/figures/Researcharium_linked_nocircle.svg\" alt=\"The jobs of a researcher\" class=\"img-fluid\" width=\"800px\" >";
     }
 
 });
